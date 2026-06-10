@@ -121,7 +121,8 @@ test with some input sample
 **Answer**
 
 
-Sample Case 1
+**Sample Case 1**
+
 If the Child alone is alone but with a ticket:
 Inputs: age = 9,    is_accompanied = false,     has_ticket = true
 evaluation : (9>= 13 OR false) AND true $\rightarrow$ (false OR false) AND true $\rightarrow$ false AND true $\rightarrow$ 

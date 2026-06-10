@@ -6,26 +6,53 @@
 1-Identify the inputs?
 -------------------------------------------------------------------------------------
 **Answer**
-age , adult company,valid tickets 
+age , adult accompany,valid tickets 
 
 
 --------------------------------------------------------------------------------
 2-what is the process
 --------------------------------------------------------------------------------
 **Answer**
-the system check if the user is 13 years old or older,chech if the user is accomanied by an adult ,checki if the user have a valid ticket 
+the system check if the person is 13 years old or older,chech if the user is accomanied by an adult ,checki if the user have a valid ticket 
 
-
---------------------------------------------------------------------------
-Design the Algorithm 
 ---------------------------------------------------------------------------
+3-what is the output 
+--------------------------------------------------------------------------
+
+**Answer**
+a messeage shoes if the person is allowed to enter or  not allowed 
+
+
+
+
+---------------------------------------------------------------------------
+Design the Algorithm 
+Design the algorithim using draw.io/canva
+-------------------------------------------------------------------------
 **Answer**
 
 
+                      [Start] -> [Input: age, accompanied, ticket] -> [Is ticket valid?]
+                                                         |
+                                               +---------+---------+
+                                               | Yes               | No
+                                               v                   v
+                                 [age >= 13 OR accompanied?]  [Denied Entry]
+                                               |                   |
+                                     +---------+---------+         |
+                                     | Yes               | No      |
+                                     v                   v         v
+                              [Allowed Entry]        [Denied Entry] 
+                                     |                   |
+                                     +---------+---------+
+                                               |
+                                               v
+                                            [End]
 
 
-Design the algorithim using draw.io/canva
--------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
 complete the truth table 
 -----------------------------------------------------------------------------
 
@@ -67,32 +94,47 @@ design an algorithim
 -----------------------------------------------------------
 create Pseudcode
 -----------------------------------------------------------
+     BEGIN
+         DISPLAY "Enter customer age: "
+         INPUT age
+         DISPLAY "Is customer accompanied by an adult? (true/false): "
+         INPUT is_accompanied
+         DISPLAY "Does customer have a valid ticket? (true/false): "
+         INPUT has_ticket
 
-
-```text
-BEGIN
-    DISPLAY "Enter your age please :"
-    INPUT age
-    DISPLAY "Are you accompanied by an adult? (true/false):"
-    INPUT is_accompanied
-    DISPLAY "Do you have a valid ticket? (true/false):"
-    INPUT has_ticket
-
-    IF (age >= 13 OR is_accompanied == true) AND (has_ticket == true) THEN
-        DISPLAY "Allowed to enter"
-    ELSE
-        DISPLAY "Not allowed to enter"
-    ENDIF
-END
-
+     
+         IF (age >= 13 OR is_accompanied == true) AND has_ticket == true THEN
+             DISPLAY "OUTPUT: Access Granted. Allowed to enter."
+         ELSE
+             DISPLAY "OUTPUT: Access Denied. Not allowed to enter."
+         ENDIF
+     END
 
 
 
 
 
---------------------------------------------------------------------------------
-3-what is the output 
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------
+Evaluate the expression:
+---------------------------------------------------------------------------
+test with some input sample
 **Answer**
-a messeage shoes if the user is allowed to enter or the user is not allowed 
+
+
+Sample Case 1
+If the Child alone is alone but with a ticket:
+Inputs: age = 9,    is_accompanied = false,     has_ticket = true
+evaluation : (9>= 13 OR false) AND true $\rightarrow$ (false OR false) AND true $\rightarrow$ false AND true $\rightarrow$ 
+
+
+
+Output: "Not allowed to enter"
+
+
+
+
+
+
+
+
 

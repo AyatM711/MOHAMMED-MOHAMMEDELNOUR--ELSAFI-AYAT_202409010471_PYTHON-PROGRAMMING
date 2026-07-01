@@ -34,9 +34,9 @@ The café currently calculates customer bills manually, which is inefficient,and
 -----------------------------------------------------------------------------------
 ## 2. Problem Decomposition
 ----------------------------------------------------------------------------------
-To keep the code clean, modular, and easy to maintain, the problem is broken down into four distinct structural parts:
+we can  broken down the problem  into four distinct structural parts:
 * **Input Collection Subsystem:** Handles console reading operations and converts user text streams safely into numeric integer variables.
-* **Pricing/Calculation Engine:** A dedicated computation routine isolated from user interactions that strictly executes the pricing mathematical formulas.
+* **Pricing/Calculation Engine:** computation routine isolated from user interactions that strictly executes the pricing mathematical formulas.
 * **Formatting/Receipt Output Layout:** A display processor responsible for building strings, applying templates, and aligning margins for the printable output grid.
 * **Main Orchestrator (Runtime Controller):** The root main entry gate that maps outputs from the input steps straight into the business math processor, then bridges those outcomes into the printer pipeline.
 

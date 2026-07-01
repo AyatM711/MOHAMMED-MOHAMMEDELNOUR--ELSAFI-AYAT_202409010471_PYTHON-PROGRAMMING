@@ -38,7 +38,7 @@ we can  broken down the problem  into four distinct structural parts:
 * **Input Collection Subsystem:** Handles console reading operations and converts user text streams safely into numeric integer variables.
 * **Pricing/Calculation Engine:** computation routine isolated from user interactions that strictly executes the pricing mathematical formulas.
 * **Formatting/Receipt Output Layout:** A display processor responsible for building strings, applying templates, and aligning margins for the printable output grid.
-* **Main Orchestrator (Runtime Controller):** The root main entry gate that maps outputs from the input steps straight into the business math processor, then bridges those outcomes into the printer pipeline.
+* **Runtime Controller:** The root main entry gate that maps outputs from the input steps straight into the business math processor, then bridges those outcomes into the printer pipeline.
 
 ---
 

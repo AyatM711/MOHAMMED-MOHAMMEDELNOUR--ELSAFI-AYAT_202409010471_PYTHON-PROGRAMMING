@@ -1,1 +1,4 @@
-
+Bug : Missing Input Validation for Negative Values
+The system accepts negative numbers for price and quantity without validation.
+Impact: It calculates an invalid negative total payment, allowing logic errors in order processing.
+Cause: food_order.py lacks conditional checks (if statements) to intercept values less than or equal to zero.
